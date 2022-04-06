@@ -5,15 +5,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:stage": "vue-cli-service build --mode staging",
-    "analyze": "NODE_ENV=production npm_config_report=true npm run build"
+    "build:stage": "vue-cli-service build --mode staging"
   },
   "dependencies": {
     "ant-design-vue": "^1.7.4",
     "antd": "^4.15.0",
     "axios": "^0.21.1",
     "chokidar": "^3.5.1",
-    "compression-webpack-plugin": "^9.2.0",
+    "compression-webpack-plugin": "5.0.1",
     "core-js": "^3.6.5",
     "cos-js-sdk-v5": "^1.2.9",
     "customize-cra": "^1.0.0",

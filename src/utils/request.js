@@ -1,27 +1,26 @@
-import axios from 'axios'
-import store from '../store/index'
+import axios from "axios";
+import store from "../store/index";
 const instance = axios.create({
   baseURL: process.env.VUE_APP_BASE_URL,
-  timeout: 5000
-})
+  timeout: 5000,
+});
 
-instance.interceptors.request.use(config => {
+instance.interceptors.request.use((config) => {
   // config.headers.Authorization = window.sessionStorage.getItem('token')
-  store.dispatch('commitLoading', true)
-  return config
-})
+  store.dispatch("commitLoading", true);
+  return config;
+});
 
-instance.interceptors.response.use(response => {
-  setTimeout(() => {
-    store.dispatch('commitLoading', false)
-  }, 500);
-  return response.data
-},
-  error => {
+instance.interceptors.response.use(
+  (response) => {
+    store.dispatch("commitLoading", false);
+    return response.data;
+  },
+  (error) => {
     // console.log(error)
-    store.dispatch('commitLoading', false)
-    return new Promise(() => { })
+    store.dispatch("commitLoading", false);
+    return new Promise(() => {});
   }
-)
+);
 
-export default instance
+export default instance;
