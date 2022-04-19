@@ -7,7 +7,7 @@ import 'normalize.css/normalize.css'
 Vue.config.productionTip = false
 
 // antd
-// import './plugins/antd'
+import './plugins/antd'
 // swiper
 import './plugins/swiper'
 // im
