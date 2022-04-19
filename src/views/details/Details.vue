@@ -104,10 +104,6 @@
 
 <script type="text/ecmascript-6">
 
-import Vue from 'vue'
-import { Button, Pagination, Rate, Breadcrumb, Dropdown, Menu, Icon, Modal } from 'ant-design-vue';
-Vue.use(Button);Vue.use(Pagination);Vue.use(Rate);Vue.use(Breadcrumb);Vue.use(Dropdown);Vue.use(Menu);Vue.use(Icon);
-Vue.use(Modal)
 import DetailSortNav from "./childComps/DetailSortNav/DetailSortNav";
 import QA from "./childComps/QA/QA";
 import ReturnDelivery from "./childComps/ReturnDelivery/ReturnDelivery";

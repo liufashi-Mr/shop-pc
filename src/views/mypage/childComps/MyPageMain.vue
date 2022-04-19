@@ -94,9 +94,6 @@
     getUserOrder
   } from 'network/getUserOrder';
   import formDate from 'utils/formDate'
-  import {
-    Result
-  } from 'ant-design-vue';
   const theadTitle = [
     "订单日期",
     "订单号",

@@ -9,6 +9,8 @@ Vue.config.productionTip = false
 // antd
 // import './plugins/antd'
 // swiper
+import operateCookie from './plugins/operateCookie/operateCookie'
+Vue.use(operateCookie)
 import './plugins/swiper'
 // im
 import  "./plugins/im"
