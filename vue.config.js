@@ -29,12 +29,12 @@ module.exports = {
         network: resolve("src/network"),
       },
     };
-    config.externals = {
-      vue: "Vue",
-      "vue-router": "VueRouter",
-      vuex: "Vuex",
-      "ant-design-vue": "*",
-    };
+    // config.externals = {
+    //   vue: "Vue",
+    //   "vue-router": "VueRouter",
+    //   vuex: "Vuex",
+    //   "ant-design-vue": "*",
+    // };
     if (process.env.NODE_ENV === "production") {
       config.plugins.push(
         new CompressionWebpackPlugin({
