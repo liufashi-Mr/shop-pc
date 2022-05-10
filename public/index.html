@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <!-- <link href="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.7.4/antd.min.css" rel="stylesheet"> -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/ant-design-vue/1.7.4/antd.min.css"
+      rel="stylesheet"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
     <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/vue-router/3.4.4/vue-router.min.js"></script>
@@ -14,9 +17,28 @@
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
     <div id="app"></div>
+    <script>
+      console.log(
+        "%c  ",
+        `
+          background: url(http://blog.liufashi.top/img/avatar.jpg) no-repeat center;
+          background-size: 100px 100px;
+          font-size:100px
+        `
+      );
+      console.log("本项目为毕业设计项目,不涉及交易");
+      console.log("短信服务已使用完,项目账号已无法注册");
+      console.log("体验账号", "lazypig", "Lfs123");
+      console.log("有问题可以联系", "QQ/WX:1325178274");
+      console.log("我的博客", "http://blog.liufashi.top");
+    </script>
     <!-- built files will be auto injected -->
   </body>
 </html>
