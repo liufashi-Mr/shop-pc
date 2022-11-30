@@ -235,7 +235,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   routes,
   scrollBehavior(to, from, savedPosition) { // 解决vue页面跳转只有页面不是在顶部的问题
 
